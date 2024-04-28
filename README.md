@@ -1,6 +1,5 @@
 
 # A Socio-technical Approach for Biomedical Content Authoring and Structured Web Publishing
-
 Because of the unprecedented growth in biomedical research and in clinical practices, a huge volume of biomedical contents such as research papers, clinical notes, and biomedical reports, etc. have been produced
 in recent years. According to the 2018 online molecular biology database collection, there are 1737 large-scale biological databases and over 30 million citations for biomedical literature available at PubMed
 with a tenfold increase per annum. Efficient practices for accessing biomedical publications are key to allowing a timely transfer of information from the scientific research community to peer investigators and
@@ -13,6 +12,8 @@ semantic annotations at the pre-publication stage (while first-time drafting) of
 broader semantic web vision. However, both these processes are complex and require deep technical and/or domain knowledge. Therefore, a state-of-the-art freely accessible biomedical semantic content
 authoring and publishing framework would be a game-changer. In the following sections, I summarize the current status of research in the semantic content authoring and publishing domain and highlights the
 position of this proposal.
+# Enhancing Biomedical Knowledge Representation Through Knowledge Graphs
+Even considering the significant enhancements by the social-technical and personalized approaches, there were still some flaws left unaddressed in the current methodology. Firstly, annotation recommendations were isolated to separate community posts and direct collaboration with personalized experts. This leads to difficulty in accessing the most up to date information on the most optimal annotation recommendations immediately. Previously, Semantically stored its data in a tabular format in MySQL. Due to this, the data lacks machine-readability and the meanings behind different entities (Questions, replies, ontologies, vote tally etc.) and their relationships is obscured. With these shortcomings in mind, we propose to further extend the methodology by integrating a Knowledge Graph based recommendaiton system that provides an environment for exploring the most optimal annotation recommendations retrieved in the form of a knowledge graph. 
 
 ## 🛠 Technologies
 ### Front End
@@ -50,8 +51,13 @@ React Js, Flask
 ## Database setup
 ```bash
   1. Download and install Xampp or Wamp on your system 
-  2. Create new database using PhpMySQL with the name 'semantically_db'
-  3. Import the 'semantically_db'
+  2. Connect to the Neo4j Aura database by accessing the database.php file and replace the the ClientBuilder driver credentials with the following:
+
+   -  Connection_URL: neo4j+s://9b2ba3a3.databases.neo4j.io
+   -  Password: Rs6ohkABtkf3O-l4w73N5n_DRpwRqVosjSyQxT6sABE
+   *The code should look as follows: $client = ClientBuilder::create()
+    ->withDriver('bolt', 'neo4j+s://9b2ba3a3.databases.neo4j.io', Authenticate::basic('neo4j', 'Rs6ohkABtkf3O-l4w73N5n_DRpwRqVosjSyQxT6sABE'))
+    ->build();
   4. Open 'Semantically => api => config'  folder then 'database.php' file and setup database path
   5. Open 'Semantically => src' folder then 'appinfo.js' and setup php folder path 
 ```
@@ -59,7 +65,10 @@ React Js, Flask
 ```bash
   1. npm start
 ```
-
+# Knowledge Graph Based Recommendation System Demo Page
+```
+  The demo page for the Knowledge Graph based Recommendation System is now live at: https://sebc750.github.io/. You may look at the provided media to evaluate the current system and provide feedback through the survey below the page. The demo page and survey is translatable to both English and Spanish.
+```
 # Project Demo Click to watch
 [![Demo CountPages alpha](https://github.com/bukharilab/Semantically/blob/master/landing/src/demo_img.png)](https://gosemantically.com/)
 
