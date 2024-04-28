@@ -6,17 +6,24 @@ The rise in online biomedical information has led to challenges in data retrieva
 
 ## Methodology
 
-### Semantically+Dynamic Knowledge Graph Representation and Interface
+### Figure 2.1 Semantically+Dynamic Knowledge Graph Representation and Interface
 ![alt-text](https://github.com/SebC750/SebC750.github.io/blob/1b378e8297c78b594c6c2aee1308ec6b559232cb/media/images/KG_Semantically_Workflow_bg.png)
-### Dynamic Knowledge Graph Recommendation System and Functionality
+### Figure 2.2 Dynamic Knowledge Graph Recommendation System and Functionality
 ![alt-text](https://github.com/SebC750/SebC750.github.io/blob/1b378e8297c78b594c6c2aee1308ec6b559232cb/media/images/KG_Development_Process_bg.png)
-### Use-Case Scenario for "Sleep paralysis"
-![alt-text](https://github.com/SebC750/SebC750.github.io/blob/1b378e8297c78b594c6c2aee1308ec6b559232cb/media/images/Sleep_paralysis_Process_Diagram.png)
+### Figure 2.3 Results of a Neo4j domain expert cypher query
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/62ea2823-3cad-4398-816d-5b563edefbf3)
+### Figure 2.4 Results of a search query for the term “sleep paralysis”
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/54ab0313-0a32-4984-9d63-f932468a1241)
+### Figure 2.5 Recommendation Rankings for "Sleep paralysis"
+![alt-text](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/f90bc5bb-91b7-4ca8-af38-9e05383934b0)
+### Figure 2.6 Breakdown of the Wilson score formula
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/3b7d24b8-ea4d-430c-9151-aad7a3a4945a)
+
 ## Results
-### Distribution of Responses Bar Chart
+### Figure 3.1 Distribution of Responses Bar Chart
 ![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/e044bf36-f866-4a52-abe2-9fd3136852ae)
 
-### Distribution of Responses Tab
+### Figure 3.2 Distribution of Responses Tab
 ![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/9fec22b5-b9e3-49d8-9d06-c7d4ef2f858e)
 
 ## Project Demo Materials
