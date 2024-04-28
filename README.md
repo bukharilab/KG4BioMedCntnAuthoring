@@ -51,7 +51,7 @@ React Js, Flask
 - [Mutahira Khalid](https://www.linkedin.com/in/mutahira-khalid-9b3327221/)
 - [Dr,Fazel Keshtkar](https://www.stjohns.edu/academics/faculty/fazel-keshtkar)
 
-## Published Related Research Papers
+## Published Research Papers
 
 | Authors | Title | Paper Link | Year|
 | --- | --- | --- | --- |
