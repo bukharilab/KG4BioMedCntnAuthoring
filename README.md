@@ -13,6 +13,11 @@ The rise in online biomedical information has led to challenges in data retrieva
 ### Use-Case Scenario for "Sleep paralysis"
 ![alt-text](https://github.com/SebC750/SebC750.github.io/blob/1b378e8297c78b594c6c2aee1308ec6b559232cb/media/images/Sleep_paralysis_Process_Diagram.png)
 ## Results
+### Distribution of Responses Bar Chart
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/e044bf36-f866-4a52-abe2-9fd3136852ae)
+
+### Distribution of Responses Tab
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/9fec22b5-b9e3-49d8-9d06-c7d4ef2f858e)
 
 ## Project Demo Materials
 
