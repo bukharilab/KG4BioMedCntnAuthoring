@@ -15,7 +15,7 @@ The rise in online biomedical information has led to challenges in data retrieva
 ### Figure 2.4 Results of a search query for the term “sleep paralysis”
 ![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/54ab0313-0a32-4984-9d63-f932468a1241)
 ### Figure 2.5 Recommendation Rankings for "Sleep paralysis"
-![alt-text](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/f90bc5bb-91b7-4ca8-af38-9e05383934b0)
+![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/2adeaf74-4526-44d3-8a44-dee4910ac5a5)
 ### Figure 2.6 Breakdown of the Wilson score formula
 ![image](https://github.com/bukharilab/KG4BioMedCntnAuthoring/assets/75767177/3b7d24b8-ea4d-430c-9151-aad7a3a4945a)
 
