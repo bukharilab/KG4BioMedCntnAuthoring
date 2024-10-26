@@ -97,23 +97,70 @@ React Js, Flask
 | E. B. Wilson                                                                  | Probable Inference, the Law of Succession, and Statistical Inference                                                                  | https://doi.org/10.1080/01621459.1927.10502953                                                           |   1927 |
 
 # Installation and Deployment
-## Database setup
-```bash
-  1. Download and install Xampp or Wamp on your system 
-  2. Connect to the Neo4j Aura database by accessing the database.php file and replace the the ClientBuilder driver credentials with the following:
 
-   -  Connection_URL: neo4j+s://9b2ba3a3.databases.neo4j.io
-   -  Password: Rs6ohkABtkf3O-l4w73N5n_DRpwRqVosjSyQxT6sABE
-   *The code should look as follows: $client = ClientBuilder::create()
-    ->withDriver('bolt', 'neo4j+s://9b2ba3a3.databases.neo4j.io', Authenticate::basic('neo4j', 'Rs6ohkABtkf3O-l4w73N5n_DRpwRqVosjSyQxT6sABE'))
-    ->build();
-  4. Open 'Semantically => api => config'  folder then 'database.php' file and setup database path
-  5. Open 'Semantically => src' folder then 'appinfo.js' and setup php folder path 
-```
-## Run Semantically
-```bash
-  1. npm start
-```
+## Project Setup Instructions
+
+### Prerequisites
+
+- **Node.js**: Ensure Node.js is installed on your system. Download it [here](https://nodejs.org/).
+- **XAMPP or WAMP**: Choose and install either [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](http://www.wampserver.com/) for a local server environment.
+
+### Option 1: Local Neo4j setup
+
+To run this project and neo4j database locally, follow these steps:
+
+1. **Install XAMPP or WAMP**  
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](http://www.wampserver.com/) on your system to set up a local server environment.
+
+2. **Install Neo4j Desktop**
+   - If you don't have Neo4j Desktop installed, follow this link to the installation guide and follow the instructions: 
+   [neo4j desktop download link](https://neo4j.com/deployment-center/?desktop-gdb)
+   - After installation is complete, open Neo4j desktop and create a new database. 
+   - Take note of the configuration variables (connection type, connection url, username, password) for configuring
+   the env file.
+
+3. **Configure Neo4j Database Connection**  
+   - Once you take notes of your configuration variables, then connect to the Neo4j local instance by editing the `database.php` file located in `KG4BioMedCntnAuthoring => api => config`.     
+   
+   #### .env file example
+   - NEO4J_CONNECTION_TYPE=<YOUR_NEO4J_CONNECTION_TYPE>
+   - NEO4J_CONNECTION_URL=<YOUR_NEO4J_CONNECTION_TYPE>://<YOUR_NEO4J_INSTANCE>
+   - NEO4J_USERNAME=<YOUR_USERNAME>
+   - NEO4J_PASSWORD=<YOUR_PASSWORD>
+
+   *Note: The values shown are placeholders. Be sure to replace them with your actual Neo4j connection credentials.
+
+4. **Run Semantically**
+   Once all configurations are done, access the project root folder by terminal. Install dependencies first using "npm i" so that the program can run. Then, run "npm start" to start the project.
+
+### Option 2: Using Neo4j Aura (Cloud Instance)
+
+To run this project locally and connect to a cloud hosted Neo4j instance: 
+
+1. **Install XAMPP or WAMP**  
+   Download and install [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](http://www.wampserver.com/) on your system to set up a local server environment.
+
+2. **Sign up for Neo4j Aura**  
+   Create a free cloud instance on [Neo4j Aura](https://neo4j.com/cloud/aura/). Follow the instructions for setting up an account. This is a managed Neo4j service, so you don’t need to install anything locally.
+
+3. **Create a Database**  
+   After signing up, create a new database instance and take note of the connection details (e.g., instance URL, username, and password).
+
+4. **Configure Environment Variables**  
+   - Connect to your Neo4j Aura database by editing the `database.php` file located in `KG4BioMedCntnAuthoring => api => config`.    
+   - Update the `ClientBuilder` to use your Neo4j credentials. Be sure to set up a `.env` file (not included in this repository) to securely store your credentials, like so:
+
+   #### .env file example
+   - NEO4J_CONNECTION_TYPE=<YOUR_NEO4J_CONNECTION_TYPE>
+   - NEO4J_CONNECTION_URL=<YOUR_NEO4J_CONNECTION_TYPE>://<YOUR_NEO4J_INSTANCE>
+   - NEO4J_USERNAME=<YOUR_USERNAME>
+   - NEO4J_PASSWORD=<YOUR_PASSWORD>
+
+   *Note: The values shown are placeholders. Be sure to replace them with your actual Neo4j connection credentials.
+
+5. **Run Semantically**
+   Once all configurations are done, access the project root folder by terminal. Install dependencies first using "npm i" so that the program can run. Then, run "npm start" to start the project.
+
 # Knowledge Graph Based Recommendation System Demo Page
 
   The demo page for the Knowledge Graph based Recommendation System is now live at: (https://sebc750.github.io/). You may look at the provided media to evaluate the current system and provide feedback through the survey below the page. The demo page and survey is translatable to both English and Spanish.
